@@ -1,0 +1,16 @@
+header{
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    margin:0 auto;
+    background-color: bisque;
+}
+.header-logo img{
+    height: 50px;
+    width: 50px;
+}
+.header-elements{
+     display: flex;
+    justify-content: space-between;
+    width: 350px;
+}
