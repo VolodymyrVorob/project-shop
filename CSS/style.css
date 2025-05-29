@@ -4,13 +4,73 @@ header{
     justify-content: space-between;
     margin:0 auto;
     background-color: bisque;
+    height: 80px;
 }
 .header-logo img{
-    height: 50px;
-    width: 50px;
+    height: 75px;
+    width: 75px;
+    margin-left: 30px;
 }
 .header-elements{
      display: flex;
     justify-content: space-between;
     width: 350px;
+    align-items: center;
+}
+.icons{
+    background-color: bisque;
+    margin-top: 10px;
+}
+.photo-ad img {
+    max-width: 1100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 90px;
+}
+.all-types {
+    display: flex;
+    justify-content: space-between; /* Рівномірний розподіл */
+    align-items: flex-start;
+    width: 1200px;
+    gap: 20px;
+    flex-wrap: nowrap; /* Забороняє переносити на новий рядок */
+    margin-left: 140px;
+}
+
+.types {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 32%; /* Додає фіксовану ширину для кожного блоку */
+}
+
+.types-name {
+    background-color: #e74c3c;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+}
+
+.types-options {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+}
+
+.option-names {
+    background-color: #f8f8f8;
+    color: black;
+    padding: 12px 25px;
+    border-radius: 12px;
+    font-size: 18px;
+    text-align: center;
+    width: 100%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
