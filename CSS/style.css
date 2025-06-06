@@ -22,7 +22,7 @@ header{
     margin-top: 10px;
 }
 .photo-ad img {
-    max-width: 1100px;
+    max-width: 1000px;
     height: auto;
     display: block;
     margin: 0 auto;
@@ -32,17 +32,16 @@ header{
     display: flex;
     justify-content: space-between; /* Рівномірний розподіл */
     align-items: flex-start;
-    width: 1200px;
+    width: 1000px;
     gap: 20px;
     flex-wrap: nowrap; /* Забороняє переносити на новий рядок */
-    margin-left: 140px;
 }
 
 .types {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 32%; /* Додає фіксовану ширину для кожного блоку */
+    width: 31%; /* Додає фіксовану ширину для кожного блоку */
 }
 
 .types-name {
@@ -61,7 +60,13 @@ header{
     flex-direction: row;
     align-items: center;
     gap: 12px;
-    width: 100%;
+    width: 90%;
+}
+.product-types{
+    display: flex;
+    flex-wrap: wrap;
+    scale: 0.9;
+    gap: 1px;
 }
 
 .option-names {
@@ -69,9 +74,9 @@ header{
     color: black;
     padding: 12px 25px;
     border-radius: 12px;
-    font-size: 18px;
+    font-size: 15px;
     text-align: center;
-    width: 100%;
+    width: fit-content;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 .card-container {
