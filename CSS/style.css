@@ -20,6 +20,14 @@ header{
 .icons{
     background-color: bisque;
     margin-top: 10px;
+    margin-right: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    width: fit-content;
+}
+.cart{
+    width: 40px;
 }
 .photo-ad img {
     max-width: 1000px;
