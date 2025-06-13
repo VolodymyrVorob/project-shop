@@ -1,7 +1,11 @@
 function goToCart() {
   window.location.href = "cart.html";
 }
+let amount = document.querySelector("amount")
+function increase(){
+  amount.innerHTML = +amount + 1;
 
+}
 
 window.addEventListener("click", (event) => {
   event.preventDefault();

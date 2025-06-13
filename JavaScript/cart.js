@@ -4,6 +4,12 @@ function goToSite() {
   window.location.href = "index.html";
 }
 
+let amountElement = document.querySelector(".amount");
+
+function decrease() {
+    let currentAmount = parseInt(amountElement.textContent);
+    amountElement.textContent = 0;
+}
 
 
 cart.forEach(card => {

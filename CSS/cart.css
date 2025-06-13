@@ -18,6 +18,27 @@ main{
     background-color: #404040;
     color:white;
 }
+.button-to-buy{
+              display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: greenyellow;
+            width: 150px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color:black;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
+            margin: 0 auto;
+            margin-bottom: 20px;
+}
+.button-to-buy:hover{
+              background-color: #218838;
+}
 
 .wrapper{
     margin:100px;

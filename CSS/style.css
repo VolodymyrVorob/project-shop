@@ -76,6 +76,7 @@ header{
     flex-wrap: wrap;
     scale: 0.9;
     gap: 1px;
+    margin: 0 auto;
 }
 .travel{
     margin-right: 100px;
@@ -158,6 +159,7 @@ header{
             transition: background-color 0.3s ease;
             margin-top: 20px;
             margin: 0 auto;
+            margin-bottom: 20px;
         }
 
         .button:hover {
