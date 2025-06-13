@@ -2,6 +2,7 @@ function goToCart() {
   window.location.href = "cart.html";
 }
 
+
 window.addEventListener("click", (event) => {
   event.preventDefault();
   if (event.target.hasAttribute("data-cart")) {

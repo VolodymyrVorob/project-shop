@@ -7,6 +7,7 @@
   body {
     margin: 0;
     padding: 0;
+        background-color: #404040;
   }
   
   main {
@@ -24,3 +25,84 @@ main{
     margin-top:0px;
     padding-top:100px;
 }
+.icons{
+    background-color: bisque;
+    margin-top: 10px;
+    margin-right: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    width: fit-content;
+} 
+.cart{
+    width: 30px;
+}
+.container-card {
+            display: flex;
+            gap: 70px;
+            align-items: center;
+            justify-content: center;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            max-width: 1200px;
+            flex-wrap: wrap;
+        }
+        .card {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 200px;
+            height: 340px;
+            padding: 10px;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+        .card .title {
+            font-size: 16px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .card .brand {
+            font-size: 14px;
+            color: #555;
+        }
+        .card .price {
+            font-size: 18px;
+            color: #000;
+            margin: 10px 0;
+        }
+        .cart-button {
+            display: inline-block;
+            background-color: #28a745;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .cart-button:hover {
+            background-color: #218838;
+        }
+                .button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: greenyellow;
+            padding: 10px 20px;
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
+            margin: 0 auto;
+        }
+
+        .button:hover {
+            background-color: #218838;
+        }

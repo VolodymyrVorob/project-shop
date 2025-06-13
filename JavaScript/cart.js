@@ -1,6 +1,10 @@
 let container_card = document.querySelector(".container-card")
-
 cart = JSON.parse(localStorage.getItem("cart")) || [] 
+function goToSite() {
+  window.location.href = "index.html";
+}
+
+
 
 cart.forEach(card => {
   let cardHTML = `
