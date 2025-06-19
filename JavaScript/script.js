@@ -1,11 +1,22 @@
 function goToCart() {
   window.location.href = "cart.html";
 }
-let amount = document.querySelector("amount")
+let amount = document.querySelector(".amount")
 function increase(){
-  amount.innerHTML = +amount + 1;
-
+ let currentAmount = parseInt(amount.textContent); // Отримуємо поточне значення
+    amount.textContent = currentAmount + 1;
 }
+let more = document.querySelector(".button")
+function morepr() {
+  let new_cards = document.querySelectorAll(".additional");
+  new_cards.forEach(function(card) {
+    card.style.display = "block";
+  });
+}
+
+
+
+
 
 window.addEventListener("click", (event) => {
   event.preventDefault();

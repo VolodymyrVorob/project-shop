@@ -94,11 +94,13 @@ header{
 }
 .card-container {
             display: flex;
+            flex-wrap: wrap;
             gap: 70px;
             align-items: center;
             justify-content: center;
             margin-top: 30px;
             margin-bottom: 20px;
+
         }
         .card {
             border: 1px solid #ccc;
@@ -109,6 +111,7 @@ header{
             text-align: center;
             font-family: Arial, sans-serif;
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            
         }
         .magic-wood{
             font-size: 15px;
@@ -118,6 +121,13 @@ header{
         .card img {
             width: 100%;
             height: auto;
+        }
+        .additional {
+            display: none;
+        }
+        .additional img{
+            max-height: 170px;
+
         }
         .card .title {
             font-size: 16px;
@@ -157,7 +167,7 @@ header{
             border-radius: 10px;
             cursor: pointer;
             transition: background-color 0.3s ease;
-            margin-top: 20px;
+            margin-top: 120px;
             margin: 0 auto;
             margin-bottom: 20px;
         }
