@@ -18,8 +18,55 @@ cart.forEach(card => {
             <img src="${card.img}">
             <div class="title">${card.title}</div>
             <div class="brand">${card.brand}</div>
-            <div class="price">${card.price}</div>
+        <p class="price"><small class="text-muted" data-price = "${card.price}">${card.price}</small></p>
+                 <div class="input-group">
+        <input type="number" class="form-control" placeholder="Amount" min="1"value="1">
+          <button class="btn btn-outline-secondary" type="button" data-action="minus">-</button>
+          <button class="btn btn-outline-secondary" type="button" data-action="plus">+</button>    
+          </div>
         </div>
 `
 container_card.insertAdjacentHTML("beforeend", cardHTML);
 });
+document.querySelectorAll("[data-action='minus']").forEach(btn => {
+  btn.addEventListener("click", ()=>{
+   const input = btn.closest(".input-group").querySelector(".form-control");
+    let currentValue = parseInt(input.value);
+    
+
+    if(currentValue > 1){
+      let newValue = currentValue - 1
+      input.value = newValue;
+          const priceElement = btn.closest(".card").querySelector(".text-muted");
+    const unitPrice = parseFloat(priceElement.dataset.price);
+    priceElement.innerHTML -= unitPrice
+
+
+      cart_counter--
+    localStorage.setItem("counter", cart_counter)
+    cart_counterHTML.innerHTML = cart_counter
+    
+    }
+
+  })
+})
+
+document.querySelectorAll("[data-action='plus']").forEach(btn => {
+  btn.addEventListener("click", ()=>{
+   const input = btn.closest(".input-group").querySelector(".form-control");
+    let newValue = parseInt(input.value) + 1;
+    localStorage.setItem("cart-counter", newValue)
+    input.value = localStorage.getItem("cart-counter");
+
+    const priceElement = btn.closest(".card").querySelector(".text-muted");
+    const unitPrice = parseFloat(priceElement.dataset.price);
+    priceElement.innerHTML = unitPrice * newValue
+
+    cart_counter++
+    localStorage.setItem("counter", cart_counter)
+    cart_counterHTML.innerHTML = cart_counter
+
+
+    
+  })
+})

@@ -1,11 +1,11 @@
+let cart_counterHTML = document.querySelector(".cart-counter")
+let cart_counter = localStorage.getItem("counter") || 0;
+cart_counterHTML.innerHTML = cart_counter
+
 function goToCart() {
   window.location.href = "cart.html";
 }
-let amount = document.querySelector(".amount")
-function increase(){
- let currentAmount = parseInt(amount.textContent); // Отримуємо поточне значення
-    amount.textContent = currentAmount + 1;
-}
+
 let more = document.querySelector(".button")
 function morepr() {
   let new_cards = document.querySelectorAll(".additional");
@@ -129,6 +129,9 @@ btn8.addEventListener("click", thf)
 window.addEventListener("click", (event) => {
   event.preventDefault();
   if (event.target.hasAttribute("data-cart")) {
+      cart_counter++
+      cart_counterHTML.innerHTML = cart_counter
+      localStorage.setItem("counter", cart_counter)
       let btn_bye = event.target
       let card = btn_bye.closest(".card")
       let product_info = {

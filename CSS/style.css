@@ -17,6 +17,7 @@ header{
     width: 350px;
     align-items: center;
 }
+
 .icons{
     background-color: bisque;
     margin-top: 10px;
@@ -128,16 +129,16 @@ header{
 
         }
         .card .title {
-            font-size: 16px;
+            font-size: 15px;
             font-weight: bold;
             margin: 10px 0;
         }
         .card .brand {
-            font-size: 14px;
+            font-size: 13px;
             color: #555;
         }
         .card .price {
-            font-size: 18px;
+            font-size: 16px;
             color: #000;
             margin: 10px 0;
         }
