@@ -112,10 +112,8 @@ header{
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
             
         }
-        .magic-wood{
-            font-size: 15px;
-            font-weight: bold;
-            margin: 10px 0;
+        .id{
+            display: none;
         }
         .card img {
             width: 100%;

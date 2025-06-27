@@ -138,7 +138,8 @@ window.addEventListener("click", (event) => {
         title:card.querySelector(".title").innerText,
         img: card.querySelector(".card-img").getAttribute("src"),
         brand: card.querySelector(".brand").innerText,
-        price: card.querySelector(".price").innerText
+        price: card.querySelector(".price").innerText,
+        id: card.querySelector(".id").innerText
       }
    
     let cart = JSON.parse(localStorage.getItem("cart")) || []
