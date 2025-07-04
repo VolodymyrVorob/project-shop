@@ -134,3 +134,7 @@ document.querySelectorAll("[data-action='plus']").forEach(btn => {
     totalPrice.innerText = totalSetPrice.toFixed(2);
   });
 });
+function clearCart() {
+   localStorage.clear();
+  location.reload();
+}

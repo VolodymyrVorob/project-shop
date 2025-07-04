@@ -143,7 +143,35 @@ window.addEventListener("click", (event) => {
       }
    
     let cart = JSON.parse(localStorage.getItem("cart")) || []
-    cart.push(product_info)
+    let savedQuantities = JSON.parse(localStorage.getItem("quantities")) || {};
+
+    let existingItem = cart.find(prod => String(prod.id) === String(product_info.id));
+    
+    if (existingItem) {
+      savedQuantities[product_info.id] = (savedQuantities[product_info.id] || 1) + 1;
+      localStorage.setItem("quantities", JSON.stringify(savedQuantities));
+
+    } else {
+      savedQuantities[product_info.id] = 1;
+      cart.push(product_info);
+      localStorage.setItem("quantities", JSON.stringify(savedQuantities));
+
+    }
+
     localStorage.setItem("cart", JSON.stringify(cart))
   }
 });
+  function scrollToAbout() {
+    document.getElementById("about-section").scrollIntoView({
+      behavior: "smooth"
+    });
+  }
+  function scrollToContact() {
+  const target = document.querySelector(".footer-column");
+  if (target) {
+    target.scrollIntoView({
+      behavior: "smooth"
+    });
+  }
+}
+
