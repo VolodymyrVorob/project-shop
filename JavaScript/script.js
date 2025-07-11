@@ -1,7 +1,7 @@
 let cart_counterHTML = document.querySelector(".cart-counter")
 let cart_counter = localStorage.getItem("counter") || 0;
 cart_counterHTML.innerHTML = cart_counter
-
+  let all_btn = document.querySelectorAll(".option-names");
 function goToCart() {
   window.location.href = "cart.html";
 }
@@ -23,9 +23,12 @@ let btn1 = document.querySelector(".be3")
     card_all.forEach(el => el.style.display = 'none');
     b3.forEach(el => el.style.display = 'block');
     toggled = true;
+    all_btn.forEach(btn => btn.classList.remove("active-style"));
+    btn1.classList.add("active-style");
   } else {
     card_all.forEach(el => el.style.display = 'block');
     toggled = false;
+        btn1.classList.remove("active-style")
   }
 
 };
@@ -33,14 +36,16 @@ btn1.addEventListener("click", before3)
 let btn2 = document.querySelector(".be3-7")
  function betw3_7() {
   let b3_7 = document.querySelectorAll('.b3-7');
-
   if (!toggled) {
     card_all.forEach(el => el.style.display = 'none');
     b3_7.forEach(el => el.style.display = 'block');
     toggled = true;
+    all_btn.forEach(btn => btn.classList.remove("active-style"));
+    btn2.classList.add("active-style");
   } else {
     card_all.forEach(el => el.style.display = 'block');
     toggled = false;
+    btn2.classList.remove("active-style")
   }
 
 };
@@ -53,9 +58,12 @@ let btn3 = document.querySelector(".be7-12")
     card_all.forEach(el => el.style.display = 'none');
     b7_12.forEach(el => el.style.display = 'block');
     toggled = true;
+        all_btn.forEach(btn => btn.classList.remove("active-style"));
+    btn3.classList.add("active-style");
   } else {
     card_all.forEach(el => el.style.display = 'block');
     toggled = false;
+        btn3.classList.remove("active-style")
   }
 
 };
@@ -67,9 +75,12 @@ let btn4 = document.querySelector(".cheep-btn")
     card_all.forEach(el => el.style.display = 'none');
     cheep.forEach(el => el.style.display = 'block');
     toggled = true;
+        all_btn.forEach(btn => btn.classList.remove("active-style"));
+    btn4.classList.add("active-style");
   } else {
     card_all.forEach(el => el.style.display = 'block');
     toggled = false;
+        btn4.classList.remove("active-style")
   }
 };
 btn4.addEventListener("click", cheepf)
@@ -80,9 +91,12 @@ let btn5 = document.querySelector(".medium-btn")
     card_all.forEach(el => el.style.display = 'none');
     medium.forEach(el => el.style.display = 'block');
     toggled = true;
+        all_btn.forEach(btn => btn.classList.remove("active-style"));
+    btn5.classList.add("active-style");
   } else {
     card_all.forEach(el => el.style.display = 'block');
     toggled = false;
+        btn5.classList.remove("active-style")
   }
 };
 btn5.addEventListener("click", mediumf)
@@ -93,9 +107,12 @@ let btn6 = document.querySelector(".exp-btn")
     card_all.forEach(el => el.style.display = 'none');
     exp.forEach(el => el.style.display = 'block');
     toggled = true;
+        all_btn.forEach(btn => btn.classList.remove("active-style"));
+    btn6.classList.add("active-style");
   } else {
     card_all.forEach(el => el.style.display = 'block');
     toggled = false;
+        btn6.classList.remove("active-style")
   }
 };
 btn6.addEventListener("click", expf)
@@ -106,9 +123,12 @@ let btn7 = document.querySelector(".game")
     card_all.forEach(el => el.style.display = 'none');
     gm.forEach(el => el.style.display = 'block');
     toggled = true;
+        all_btn.forEach(btn => btn.classList.remove("active-style"));
+    btn7.classList.add("active-style");
   } else {
     card_all.forEach(el => el.style.display = 'block');
     toggled = false;
+        btn7.classList.remove("active-style")
   }
 };
 btn7.addEventListener("click", gmf)
@@ -119,9 +139,12 @@ let btn8 = document.querySelector(".think")
     card_all.forEach(el => el.style.display = 'none');
     th.forEach(el => el.style.display = 'block');
     toggled = true;
+        all_btn.forEach(btn => btn.classList.remove("active-style"));
+    btn8.classList.add("active-style");
   } else {
     card_all.forEach(el => el.style.display = 'block');
     toggled = false;
+        btn8.classList.remove("active-style")
   }
 };
 btn8.addEventListener("click", thf)

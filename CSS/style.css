@@ -302,3 +302,10 @@ header{
 }
 
 
+.active-style {
+  background-color: #d4edda; /* світло-зелений фон */
+  border: 2px solid #28a745; /* зелена окантовка */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* мінімальна тінь */
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
